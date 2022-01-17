@@ -1,7 +1,5 @@
-# tcc-tmsi
-
 # TCC TMSI 2016 - IFSUL Campus Camaquã
-Autor: Carlos Henrique Jochims Spencer de Freitas
+## Autor: Carlos Henrique Jochims Spencer de Freitas
 
 ## RESUMO
 Este trabalho apresenta o desenvolvimento de um programa gerenciador de ordem de 
