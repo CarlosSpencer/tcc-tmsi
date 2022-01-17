@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <PathDelim Value="\"/>
+    <Version Value="12"/>
+    <BuildModes Active="Default"/>
+    <Units Count="20">
+      <Unit0>
+        <Filename Value="project1.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <CursorPos X="43" Y="10"/>
+        <UsageCount Value="93"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="unit2.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="sql"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="DataModule"/>
+        <UnitName Value="Unit2"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="56"/>
+        <CursorPos X="3" Y="71"/>
+        <UsageCount Value="93"/>
+      </Unit1>
+      <Unit2>
+        <Filename Value="unit3.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="opcoes"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="Unit3"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="48"/>
+        <CursorPos X="21" Y="56"/>
+        <UsageCount Value="92"/>
+      </Unit2>
+      <Unit3>
+        <Filename Value="unit5.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="cliente"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="Unit5"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="84"/>
+        <CursorPos X="3" Y="86"/>
+        <UsageCount Value="84"/>
+      </Unit3>
+      <Unit4>
+        <Filename Value="unit1.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="menuprincipal"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="Unit1"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="345"/>
+        <CursorPos X="3" Y="355"/>
+        <UsageCount Value="69"/>
+      </Unit4>
+      <Unit5>
+        <Filename Value="unit7.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="os"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="Unit7"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="86"/>
+        <CursorPos X="8" Y="110"/>
+        <UsageCount Value="65"/>
+      </Unit5>
+      <Unit6>
+        <Filename Value="unit8.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="sobre"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="Unit8"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="25"/>
+        <CursorPos X="9" Y="46"/>
+        <UsageCount Value="59"/>
+      </Unit6>
+      <Unit7>
+        <Filename Value="unit4.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="funcionario"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="Unit4"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="47"/>
+        <CursorPos X="3" Y="66"/>
+        <UsageCount Value="41"/>
+      </Unit7>
+      <Unit8>
+        <Filename Value="unit6.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="recarga"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="Unit6"/>
+        <EditorIndex Value="-1"/>
+        <UsageCount Value="37"/>
+      </Unit8>
+      <Unit9>
+        <Filename Value="unit9.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="pesquisa"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="Unit9"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="21"/>
+        <CursorPos X="8" Y="45"/>
+        <UsageCount Value="28"/>
+      </Unit9>
+      <Unit10>
+        <Filename Value="unit10.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="impressao_os"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="Unit10"/>
+        <EditorIndex Value="-1"/>
+        <UsageCount Value="24"/>
+        <LoadedDesigner Value="True"/>
+      </Unit10>
+      <Unit11>
+        <Filename Value="unit11.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="Form1"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="Unit11"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="53"/>
+        <CursorPos X="3" Y="55"/>
+        <UsageCount Value="21"/>
+      </Unit11>
+      <Unit12>
+        <Filename Value="C:\lazarus\lcl\maskedit.pp"/>
+        <UnitName Value="MaskEdit"/>
+        <TopLine Value="1914"/>
+        <CursorPos Y="1926"/>
+        <UsageCount Value="13"/>
+      </Unit12>
+      <Unit13>
+        <Filename Value="C:\lazarus\lcl\include\control.inc"/>
+        <TopLine Value="2852"/>
+        <CursorPos X="12" Y="2812"/>
+        <UsageCount Value="12"/>
+      </Unit13>
+      <Unit14>
+        <Filename Value="C:\lazarus\lcl\dbctrls.pp"/>
+        <UnitName Value="DbCtrls"/>
+        <TopLine Value="1546"/>
+        <CursorPos X="14" Y="1553"/>
+        <UsageCount Value="10"/>
+      </Unit14>
+      <Unit15>
+        <Filename Value="unit1.lfm"/>
+        <HasResources Value="True"/>
+        <EditorIndex Value="5"/>
+        <ExtraEditorCount Value="9"/>
+        <ExtraEditor1>
+          <EditorIndex Value="4"/>
+          <CursorPos X="17" Y="6"/>
+        </ExtraEditor1>
+        <ExtraEditor2>
+          <EditorIndex Value="3"/>
+        </ExtraEditor2>
+        <ExtraEditor3>
+          <CursorPos Y="17"/>
+        </ExtraEditor3>
+        <ExtraEditor4>
+          <EditorIndex Value="6"/>
+        </ExtraEditor4>
+        <ExtraEditor5>
+          <EditorIndex Value="7"/>
+        </ExtraEditor5>
+        <ExtraEditor6>
+          <EditorIndex Value="10"/>
+        </ExtraEditor6>
+        <ExtraEditor7>
+          <EditorIndex Value="8"/>
+          <CursorPos X="30" Y="6"/>
+        </ExtraEditor7>
+        <ExtraEditor8>
+          <EditorIndex Value="9"/>
+          <TopLine Value="100"/>
+          <CursorPos X="7" Y="106"/>
+        </ExtraEditor8>
+        <ExtraEditor9>
+          <EditorIndex Value="15"/>
+        </ExtraEditor9>
+        <UsageCount Value="20"/>
+        <DefaultSyntaxHighlighter Value="LFM"/>
+      </Unit15>
+      <Unit16>
+        <Filename Value="C:\lazarus\lcl\lclclasses.pp"/>
+        <UnitName Value="LCLClasses"/>
+        <TopLine Value="13"/>
+        <CursorPos X="41" Y="21"/>
+        <UsageCount Value="11"/>
+      </Unit16>
+      <Unit17>
+        <Filename Value="C:\lazarus\lcl\controls.pp"/>
+        <UnitName Value="Controls"/>
+        <TopLine Value="25"/>
+        <CursorPos X="36" Y="38"/>
+        <UsageCount Value="10"/>
+      </Unit17>
+      <Unit18>
+        <Filename Value="D:\Usuario\Downloads\fortesreport-3.24-LCL-R2\rlprinters.pas"/>
+        <UnitName Value="RLPrinters"/>
+        <TopLine Value="122"/>
+        <CursorPos X="56" Y="125"/>
+        <UsageCount Value="10"/>
+      </Unit18>
+      <Unit19>
+        <Filename Value="D:\Usuario\Downloads\fortesreport-3.24-LCL-R2\fortes324forlaz.pas"/>
+        <UsageCount Value="10"/>
+      </Unit19>
+    </Units>
+    <General>
+      <ActiveWindowIndexAtStart Value="-1"/>
+    </General>
+    <JumpHistory HistoryIndex="-1"/>
+    <RunParams>
+      <FormatVersion Value="2"/>
+      <Modes ActiveMode="default"/>
+    </RunParams>
+  </ProjectSession>
+</CONFIG>

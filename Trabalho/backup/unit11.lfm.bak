@@ -1,0 +1,62 @@
+object Form1: TForm1
+  Left = 691
+  Height = 210
+  Top = 248
+  Width = 390
+  BorderIcons = []
+  BorderStyle = bsSingle
+  Caption = 'Form1'
+  ClientHeight = 210
+  ClientWidth = 390
+  OnShow = FormShow
+  LCLVersion = '1.2.2.0'
+  object Edit1: TEdit
+    Left = 91
+    Height = 23
+    Top = 64
+    Width = 184
+    EchoMode = emPassword
+    OnChange = Edit1Change
+    PasswordChar = '*'
+    TabOrder = 0
+    Text = 'Edit1'
+  end
+  object DBLookupComboBox1: TDBLookupComboBox
+    Left = 91
+    Height = 23
+    Top = 24
+    Width = 181
+    KeyField = 'codigo'
+    ListField = 'nome'
+    ListFieldIndex = 0
+    ListSource = sql.fontefuncionario
+    LookupCache = False
+    ScrollListDataset = True
+    Style = csDropDownList
+    TabOrder = 1
+  end
+  object BitBtn1: TBitBtn
+    Left = 88
+    Height = 30
+    Top = 112
+    Width = 75
+    Default = True
+    DefaultCaption = True
+    Kind = bkOK
+    ModalResult = 1
+    OnClick = BitBtn1Click
+    TabOrder = 2
+  end
+  object BitBtn2: TBitBtn
+    Left = 216
+    Height = 30
+    Top = 112
+    Width = 77
+    Cancel = True
+    DefaultCaption = True
+    Kind = bkCancel
+    ModalResult = 2
+    OnClick = BitBtn2Click
+    TabOrder = 3
+  end
+end

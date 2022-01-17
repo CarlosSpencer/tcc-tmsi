@@ -1,0 +1,8 @@
+object recarga: Trecarga
+  Left = 305
+  Height = 415
+  Top = 192
+  Width = 636
+  Caption = 'Recarga de Cartucho'
+  LCLVersion = '1.2.2.0'
+end

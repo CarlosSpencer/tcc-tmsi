@@ -1,0 +1,789 @@
+object sql: Tsql
+  OldCreateOrder = False
+  Height = 313
+  HorizontalOffset = 461
+  VerticalOffset = 149
+  Width = 613
+  object transacao: TSQLTransaction
+    Active = True
+    Action = caNone
+    Database = banco
+    left = 32
+    top = 80
+  end
+  object banco: TPQConnection
+    Connected = True
+    LoginPrompt = False
+    DatabaseName = 'TCC'
+    KeepConnection = False
+    Password = 'postgres'
+    Transaction = transacao
+    UserName = 'postgres'
+    HostName = '127.0.0.1'
+    LogEvents = []
+    left = 32
+    top = 24
+  end
+  object sqlopcoes: TSQLQuery
+    IndexName = 'DEFAULT_ORDER'
+    FieldDefs = <    
+      item
+        Name = 'codigo'
+        DataType = ftInteger
+        Precision = -1
+        Size = 0
+      end    
+      item
+        Name = 'endereco'
+        DataType = ftString
+        Precision = -1
+        Size = 50
+      end    
+      item
+        Name = 'complemento'
+        DataType = ftString
+        Precision = -1
+        Size = 20
+      end    
+      item
+        Name = 'bairro'
+        DataType = ftString
+        Precision = -1
+        Size = 20
+      end    
+      item
+        Name = 'cidade'
+        DataType = ftString
+        Precision = -1
+        Size = 30
+      end    
+      item
+        Name = 'uf'
+        DataType = ftString
+        Precision = -1
+        Size = 2
+      end    
+      item
+        Name = 'cep'
+        DataType = ftString
+        Precision = -1
+        Size = 9
+      end    
+      item
+        Name = 'telefone1'
+        DataType = ftString
+        Precision = -1
+        Size = 13
+      end    
+      item
+        Name = 'telefone2'
+        DataType = ftString
+        Precision = -1
+        Size = 13
+      end    
+      item
+        Name = 'fax'
+        DataType = ftString
+        Precision = -1
+        Size = 13
+      end    
+      item
+        Name = 'cnpj'
+        DataType = ftString
+        Precision = -1
+        Size = 18
+      end    
+      item
+        Name = 'ie'
+        DataType = ftString
+        Precision = -1
+        Size = 10
+      end    
+      item
+        Name = 'razao'
+        DataType = ftString
+        Precision = -1
+        Size = 50
+      end    
+      item
+        Name = 'fantasia'
+        DataType = ftString
+        Precision = -1
+        Size = 30
+      end>
+    Active = True
+    AfterDelete = sqlopcoesAfterDelete
+    AfterPost = sqlopcoesAfterPost
+    Database = banco
+    Transaction = transacao
+    SQL.Strings = (
+      'select * from sistema where codigo=1'
+    )
+    Params = <>
+    left = 512
+    top = 24
+  end
+  object fonteopcoes: TDataSource
+    DataSet = sqlopcoes
+    left = 512
+    top = 80
+  end
+  object sqlcliente: TSQLQuery
+    IndexName = 'DEFAULT_ORDER'
+    FieldDefs = <    
+      item
+        Name = 'codigo'
+        DataType = ftInteger
+        Precision = -1
+        Size = 0
+      end    
+      item
+        Name = 'nome'
+        DataType = ftString
+        Precision = -1
+        Size = 60
+      end    
+      item
+        Name = 'apelido'
+        DataType = ftString
+        Precision = -1
+        Size = 40
+      end    
+      item
+        Name = 'endereco'
+        DataType = ftString
+        Precision = -1
+        Size = 60
+      end    
+      item
+        Name = 'complemento'
+        DataType = ftString
+        Precision = -1
+        Size = 20
+      end    
+      item
+        Name = 'bairro'
+        DataType = ftString
+        Precision = -1
+        Size = 30
+      end    
+      item
+        Name = 'telefone1'
+        DataType = ftString
+        Precision = -1
+        Size = 13
+      end    
+      item
+        Name = 'telefone2'
+        DataType = ftString
+        Precision = -1
+        Size = 13
+      end    
+      item
+        Name = 'fax'
+        DataType = ftString
+        Precision = -1
+        Size = 13
+      end    
+      item
+        Name = 'cpf'
+        DataType = ftString
+        Precision = -1
+        Size = 14
+      end    
+      item
+        Name = 'rg'
+        DataType = ftString
+        Precision = -1
+        Size = 10
+      end    
+      item
+        Name = 'ie'
+        DataType = ftString
+        Precision = -1
+        Size = 10
+      end    
+      item
+        Name = 'cnpj'
+        DataType = ftString
+        Precision = -1
+        Size = 18
+      end    
+      item
+        Name = 'nascimento'
+        DataType = ftDate
+        Precision = -1
+        Size = 0
+      end    
+      item
+        Name = 'datacadastro'
+        DataType = ftDate
+        Precision = -1
+        Size = 0
+      end    
+      item
+        Name = 'obs'
+        DataType = ftMemo
+        Precision = -1
+        Size = 0
+      end    
+      item
+        Name = 'tipo'
+        DataType = ftString
+        Precision = -1
+        Size = 8192
+      end    
+      item
+        Name = 'cidade'
+        DataType = ftString
+        Precision = -1
+        Size = 30
+      end    
+      item
+        Name = 'uf'
+        DataType = ftString
+        Precision = -1
+        Size = 2
+      end    
+      item
+        Name = 'cep'
+        DataType = ftString
+        Precision = -1
+        Size = 9
+      end    
+      item
+        Name = 'foto1'
+        DataType = ftBlob
+        Precision = -1
+        Size = 0
+      end>
+    Active = True
+    Database = banco
+    Transaction = transacao
+    SQL.Strings = (
+      'select * from cliente'
+    )
+    Params = <>
+    left = 104
+    top = 24
+  end
+  object fontecliente: TDataSource
+    DataSet = sqlcliente
+    left = 104
+    top = 80
+  end
+  object sqlmenucliente: TSQLQuery
+    IndexName = 'DEFAULT_ORDER'
+    FieldDefs = <    
+      item
+        Name = 'codigo'
+        DataType = ftInteger
+        Precision = -1
+        Size = 0
+      end    
+      item
+        Name = 'nome'
+        DataType = ftString
+        Precision = -1
+        Size = 60
+      end    
+      item
+        Name = 'telefone1'
+        DataType = ftString
+        Precision = -1
+        Size = 13
+      end    
+      item
+        Name = 'telefone2'
+        DataType = ftString
+        Precision = -1
+        Size = 13
+      end>
+    Active = True
+    Database = banco
+    Transaction = transacao
+    SQL.Strings = (
+      'select codigo, nome, telefone1, telefone2 from cliente order by nome asc'
+    )
+    Params = <>
+    left = 104
+    top = 144
+  end
+  object fontemenucliente: TDataSource
+    DataSet = sqlmenucliente
+    left = 104
+    top = 200
+  end
+  object sqlmenuos: TSQLQuery
+    IndexName = 'DEFAULT_ORDER'
+    FieldDefs = <    
+      item
+        Name = 'nome'
+        DataType = ftString
+        Precision = -1
+        Size = 60
+      end    
+      item
+        Name = 'telefone1'
+        DataType = ftString
+        Precision = -1
+        Size = 13
+      end    
+      item
+        Name = 'telefone2'
+        DataType = ftString
+        Precision = -1
+        Size = 13
+      end    
+      item
+        Name = 'codigo'
+        DataType = ftInteger
+        Precision = -1
+        Size = 0
+      end    
+      item
+        Name = 'situacao'
+        DataType = ftInteger
+        Precision = -1
+        Size = 0
+      end>
+    Active = True
+    Database = banco
+    Transaction = transacao
+    SQL.Strings = (
+      'select'
+      'cliente.nome, cliente.telefone1, cliente.telefone2,'
+      'os.codigo, os.situacao'
+      'from'
+      'os, cliente'
+      'where'
+      'os.codigo_cliente=cliente.codigo'
+      'order by'
+      'codigo'
+    )
+    Params = <>
+    left = 328
+    top = 144
+  end
+  object fontemenuos: TDataSource
+    DataSet = sqlmenuos
+    left = 328
+    top = 200
+  end
+  object sqlos: TSQLQuery
+    IndexName = 'DEFAULT_ORDER'
+    FieldDefs = <    
+      item
+        Name = 'codigo'
+        DataType = ftInteger
+        Precision = -1
+        Size = 0
+      end    
+      item
+        Name = 'dataentrada'
+        DataType = ftDate
+        Precision = -1
+        Size = 0
+      end    
+      item
+        Name = 'datasaida'
+        DataType = ftDate
+        Precision = -1
+        Size = 0
+      end    
+      item
+        Name = 'codigo_cliente'
+        DataType = ftInteger
+        Precision = -1
+        Size = 0
+      end    
+      item
+        Name = 'informado'
+        DataType = ftMemo
+        Precision = -1
+        Size = 0
+      end    
+      item
+        Name = 'encontrado'
+        DataType = ftMemo
+        Precision = -1
+        Size = 0
+      end    
+      item
+        Name = 'realizado'
+        DataType = ftMemo
+        Precision = -1
+        Size = 0
+      end    
+      item
+        Name = 'situacao'
+        DataType = ftInteger
+        Precision = -1
+        Size = 0
+      end    
+      item
+        Name = 'obs'
+        DataType = ftMemo
+        Precision = -1
+        Size = 0
+      end    
+      item
+        Name = 'valor_serviço'
+        DataType = ftCurrency
+        Precision = -1
+        Size = 0
+      end    
+      item
+        Name = 'valor_produto'
+        DataType = ftCurrency
+        Precision = -1
+        Size = 0
+      end    
+      item
+        Name = 'cod_equipamento'
+        DataType = ftInteger
+        Precision = -1
+        Size = 0
+      end    
+      item
+        Name = 'tecnico'
+        DataType = ftInteger
+        Precision = -1
+        Size = 0
+      end    
+      item
+        Name = 'valor_total'
+        DataType = ftCurrency
+        Precision = -1
+        Size = 0
+      end    
+      item
+        Name = 'finalizado'
+        DataType = ftBoolean
+        Precision = -1
+        Size = 0
+      end    
+      item
+        Name = 'foto1'
+        DataType = ftBlob
+        Precision = -1
+        Size = 0
+      end    
+      item
+        Name = 'foto2'
+        DataType = ftBlob
+        Precision = -1
+        Size = 0
+      end    
+      item
+        Name = 'foto3'
+        DataType = ftBlob
+        Precision = -1
+        Size = 0
+      end>
+    Active = True
+    Database = banco
+    Transaction = transacao
+    SQL.Strings = (
+      'select * from os'
+      ''
+      ''
+    )
+    Params = <>
+    left = 328
+    top = 24
+  end
+  object fonteos: TDataSource
+    DataSet = sqlos
+    left = 328
+    top = 80
+  end
+  object sqlcidade: TSQLQuery
+    FieldDefs = <    
+      item
+        Name = 'codigo'
+        DataType = ftInteger
+        Precision = -1
+        Size = 0
+      end    
+      item
+        Name = 'estado'
+        DataType = ftString
+        Precision = -1
+        Size = 2
+      end    
+      item
+        Name = 'cidade'
+        DataType = ftString
+        Precision = -1
+        Size = 30
+      end    
+      item
+        Name = 'cep'
+        DataType = ftString
+        Precision = -1
+        Size = 9
+      end>
+    Database = banco
+    Transaction = transacao
+    SQL.Strings = (
+      'select * from cidade'
+    )
+    Params = <>
+    left = 560
+    top = 192
+  end
+  object fontecidade: TDataSource
+    DataSet = sqlcidade
+    left = 560
+    top = 248
+  end
+  object fontefuncionario: TDataSource
+    DataSet = sqlfuncionario
+    left = 216
+    top = 80
+  end
+  object sqlfuncionario: TSQLQuery
+    IndexName = 'DEFAULT_ORDER'
+    FieldDefs = <    
+      item
+        Name = 'codigo'
+        DataType = ftInteger
+        Precision = -1
+        Size = 0
+      end    
+      item
+        Name = 'nome'
+        DataType = ftString
+        Precision = -1
+        Size = 50
+      end    
+      item
+        Name = 'cargo'
+        DataType = ftString
+        Precision = -1
+        Size = 20
+      end    
+      item
+        Name = 'endereco'
+        DataType = ftString
+        Precision = -1
+        Size = 50
+      end    
+      item
+        Name = 'bairro'
+        DataType = ftString
+        Precision = -1
+        Size = 30
+      end    
+      item
+        Name = 'complemento'
+        DataType = ftString
+        Precision = -1
+        Size = 30
+      end    
+      item
+        Name = 'cidade'
+        DataType = ftString
+        Precision = -1
+        Size = 50
+      end    
+      item
+        Name = 'uf'
+        DataType = ftString
+        Precision = -1
+        Size = 2
+      end    
+      item
+        Name = 'telefone1'
+        DataType = ftString
+        Precision = -1
+        Size = 9
+      end    
+      item
+        Name = 'telefone2'
+        DataType = ftString
+        Precision = -1
+        Size = 9
+      end>
+    Active = True
+    Database = banco
+    Transaction = transacao
+    SQL.Strings = (
+      'select * from cad_funcionario'
+    )
+    Params = <>
+    left = 216
+    top = 24
+  end
+  object fontemenufuncionario: TDataSource
+    DataSet = sqlmenufuncionario
+    left = 216
+    top = 200
+  end
+  object sqlmenufuncionario: TSQLQuery
+    IndexName = 'DEFAULT_ORDER'
+    FieldDefs = <    
+      item
+        Name = 'codigo'
+        DataType = ftInteger
+        Precision = -1
+        Size = 0
+      end    
+      item
+        Name = 'nome'
+        DataType = ftString
+        Precision = -1
+        Size = 50
+      end    
+      item
+        Name = 'cargo'
+        DataType = ftString
+        Precision = -1
+        Size = 20
+      end    
+      item
+        Name = 'telefone1'
+        DataType = ftString
+        Precision = -1
+        Size = 9
+      end>
+    Active = True
+    Database = banco
+    Transaction = transacao
+    SQL.Strings = (
+      'select codigo, nome, cargo, telefone1 from cad_funcionario order by nome asc'
+    )
+    Params = <>
+    left = 216
+    top = 144
+  end
+  object fonterecarga: TDataSource
+    DataSet = sqlrecarga
+    left = 424
+    top = 80
+  end
+  object sqlrecarga: TSQLQuery
+    IndexName = 'DEFAULT_ORDER'
+    FieldDefs = <    
+      item
+        Name = 'codigo'
+        DataType = ftInteger
+        Precision = -1
+        Size = 0
+      end    
+      item
+        Name = 'codigo_cliente'
+        DataType = ftInteger
+        Precision = -1
+        Size = 0
+      end    
+      item
+        Name = 'marca'
+        DataType = ftString
+        Precision = -1
+        Size = 8192
+      end    
+      item
+        Name = 'modelo'
+        DataType = ftString
+        Precision = -1
+        Size = 8192
+      end    
+      item
+        Name = 'data_entrada'
+        DataType = ftDate
+        Precision = -1
+        Size = 0
+      end    
+      item
+        Name = 'data_saida'
+        DataType = ftDate
+        Precision = -1
+        Size = 0
+      end    
+      item
+        Name = 'valor'
+        DataType = ftFloat
+        Precision = -1
+        Size = 0
+      end    
+      item
+        Name = 'tipo'
+        DataType = ftString
+        Precision = -1
+        Size = 8
+      end    
+      item
+        Name = 'estado'
+        DataType = ftInteger
+        Precision = -1
+        Size = 0
+      end>
+    Active = True
+    Database = banco
+    Transaction = transacao
+    SQL.Strings = (
+      'select * from os_cartucho'
+    )
+    Params = <>
+    left = 424
+    top = 24
+  end
+  object fontemenurecarga: TDataSource
+    DataSet = sqlmenurecarga
+    left = 424
+    top = 200
+  end
+  object sqlmenurecarga: TSQLQuery
+    IndexName = 'DEFAULT_ORDER'
+    FieldDefs = <    
+      item
+        Name = 'nome'
+        DataType = ftString
+        Precision = -1
+        Size = 60
+      end    
+      item
+        Name = 'telefone1'
+        DataType = ftString
+        Precision = -1
+        Size = 13
+      end    
+      item
+        Name = 'telefone2'
+        DataType = ftString
+        Precision = -1
+        Size = 13
+      end    
+      item
+        Name = 'codigo'
+        DataType = ftInteger
+        Precision = -1
+        Size = 0
+      end    
+      item
+        Name = 'estado'
+        DataType = ftInteger
+        Precision = -1
+        Size = 0
+      end>
+    Active = True
+    Database = banco
+    Transaction = transacao
+    SQL.Strings = (
+      'select'
+      'cliente.nome, cliente.telefone1, cliente.telefone2,'
+      'os_cartucho.codigo, os_cartucho.estado'
+      'from'
+      'os_cartucho, cliente'
+      'where'
+      'os_cartucho.codigo_cliente=cliente.codigo'
+      'order by'
+      'codigo'
+    )
+    Params = <>
+    left = 424
+    top = 144
+  end
+end
